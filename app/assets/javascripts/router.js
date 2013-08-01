@@ -3,10 +3,10 @@ EmberApp.Router.map(function() {
     });
 });
 
-EmberApp.ResourcesRoute = Ember.Route.extend({
-   model: function(){
-       return EmberApp.Resource.find();
-   }
+EmberApp.ResourcesIndexRoute = Ember.Route.extend({
+  setupController: function(controller, model){
+      controller.set('model', EmberApp.Resource.find());
+  }
 });
 
 
