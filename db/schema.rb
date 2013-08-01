@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130727124844) do
+ActiveRecord::Schema.define(:version => 20130801163538) do
 
   create_table "assets", :force => true do |t|
     t.string   "name"
@@ -27,11 +27,18 @@ ActiveRecord::Schema.define(:version => 20130727124844) do
     t.datetime "updated_at",     :null => false
   end
 
+  create_table "resource_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "resources", :force => true do |t|
     t.string   "name"
     t.integer  "project_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "resource_type_id"
   end
 
 end
