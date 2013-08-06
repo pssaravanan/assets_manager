@@ -1,6 +1,15 @@
-sfll;ksf
-{{#each model}}
-    {{name}}
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Project</th>
+    </tr>
+    {{controller}}
+    {{#each resource in controller}}
+        <tr>
+            <td>{{resource.name}}</td>
+            <td>{{resource.resource_type}}</td>
+            <td>{{resource.project}}</td>
+        </tr>
     {{/each}}
-
-{{resourcesName}}
+</table>

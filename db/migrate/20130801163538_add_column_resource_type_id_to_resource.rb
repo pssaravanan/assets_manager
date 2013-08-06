@@ -1,5 +1,7 @@
 class AddColumnResourceTypeIdToResource < ActiveRecord::Migration
   def change
-    add_column :resources, :resource_type_id, :integer
+    change_table :resources do |t|
+      t.references :resource_type
+    end
   end
 end
