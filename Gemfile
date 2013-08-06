@@ -29,6 +29,7 @@ gem 'jquery-rails'
 gem 'ember-rails'
 gem 'ember-source', '1.0.0.rc6.3'
 gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem "active_model_serializers", :git => "git://github.com/josevalim/active_model_serializers.git"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,4 +1,9 @@
 GIT
+  remote: git://github.com/josevalim/active_model_serializers.git
+  revision: 5e9b0611ce024166f5d999dd3304d44346383922
+  specs:
+
+GIT
   remote: http://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 3ebe7b161a7699e56431d546aa98034483a3bb3c
   specs:
@@ -141,6 +146,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers!
   ember-rails
   ember-source (= 1.0.0.rc6.3)
   factory_girl_rails (~> 4.0)
