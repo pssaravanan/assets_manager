@@ -1,5 +1,6 @@
 EmberApp.Resource = DS.Model.extend({
         name: DS.attr('string'),
-        resourceType: DS.belongsTo('EmberApp.ResourceType')
+        resource_type: DS.attr('string'),
+        project: DS.attr('string')
     }
 );
