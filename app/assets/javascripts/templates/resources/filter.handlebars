@@ -1,0 +1,20 @@
+<div class="row-fluid">
+    <div class="span6">
+    </div>
+    <div class="span6">
+        <div class="pull-right">
+
+            <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    Filter by
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    {{#each view.resourceType}}
+                        <li><a href="">{{name}}</a></li>
+                    {{/each }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

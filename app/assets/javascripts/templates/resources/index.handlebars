@@ -1,14 +1,18 @@
-<table class="table table-striped">
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Project</th>
-    </tr>
-    {{#each resource in controller}}
+<div class="container">
+
+    {{view EmberApp.FilterView}}
+    <table class="table table-striped">
         <tr>
-            <td>{{resource.name}}</td>
-            <td>{{resource.resource_type}}</td>
-            <td>{{resource.project}}</td>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Project</th>
         </tr>
-    {{/each}}
-</table>
+        {{#each resource in controller}}
+            <tr>
+                <td>{{resource.name}}</td>
+                <td>{{resource.resource_type}}</td>
+                <td>{{resource.project}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</div>

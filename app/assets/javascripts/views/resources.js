@@ -1,3 +1,3 @@
 EmberApp.ResourceIndexView = Ember.View.extend({
-   templateName: "resources/index"
+   templateName: "resources/inde"
 });
