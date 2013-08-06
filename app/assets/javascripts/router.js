@@ -4,8 +4,8 @@ EmberApp.Router.map(function() {
 });
 
 EmberApp.ResourcesIndexRoute = Ember.Route.extend({
-  setupController: function(controller, model){
-      controller.set('model', EmberApp.Resource.find());
+  model: function(){
+      return EmberApp.Resource.find();
   }
 });
 
